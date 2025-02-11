@@ -5,18 +5,23 @@ Quiz website, 4 Quizzes, buzzfeed like
 Project plan with timelines and description
 https://app.teamgantt.com/projects/gantt?ids=4201781
 
-# TODO LIST
+# PART 1TODO LIST (DUE 28/02/2025 3PM)
 
-BOLD = Complete
+~~Crossed~~ = complete
 
 Description of overall site with planning - Indivudal \
-****Clear description of features, functionality**** \
-****Website Tree Diagram****\
-Interface Wire Diagrams 
+Interface Wire Diagrams - Individual
+~~Clear description of features, functionality~~ \
+~~Website Tree Diagram~~\
+
+
+
 
 Background research of similar sites 
 
 Buzzfeed - Finn \
 uquiz - Shatha \
 sprocle - Adrian \
-jetpunk - Luke
+jetpunk - Luke \
+
+
