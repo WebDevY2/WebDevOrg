@@ -16,7 +16,7 @@ Interface Wire Diagrams
 
 Background research of similar sites 
 
-Buzzfeed - Finn
-uquiz - Shatha
-sprocle - Adrian
+Buzzfeed - Finn \
+uquiz - Shatha \
+sprocle - Adrian \
 jetpunk - Luke
