@@ -5,7 +5,7 @@ Quiz website, 4 Quizzes, buzzfeed like
 Project plan with timelines and description
 https://app.teamgantt.com/projects/gantt?ids=4201781
 
-# PART 1TODO LIST (DUE 28/02/2025 3PM)
+# PART 1 TODO LIST (DUE 28/02/2025 3PM)
 
 ~~Crossed~~ = Complete
 
