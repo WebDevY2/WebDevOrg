@@ -9,7 +9,7 @@ https://app.teamgantt.com/projects/gantt?ids=4201781
 
 BOLD = Complete
 
-Description of overall site with planning\ - Indivudal
+Description of overall site with planning - Indivudal \
 ****Clear description of features, functionality**** \
 ****Website Tree Diagram****\
 Interface Wire Diagrams,\
