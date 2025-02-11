@@ -12,9 +12,9 @@ BOLD = Complete
 Description of overall site with planning - Indivudal \
 ****Clear description of features, functionality**** \
 ****Website Tree Diagram****\
-Interface Wire Diagrams,\
+Interface Wire Diagrams \
 
-Background research of similar sites\
+Background research of similar sites \
 
 Buzzfeed - Finn
 uquiz - Shatha
