@@ -7,12 +7,12 @@ https://app.teamgantt.com/projects/gantt?ids=4201781
 
 # PART 1TODO LIST (DUE 28/02/2025 3PM)
 
-~~Crossed~~ = complete
+~~Crossed~~ = Complete
 
 Description of overall site with planning - Indivudal \
-Interface Wire Diagrams - Individual
+Interface Wire Diagrams - Individual \
 ~~Clear description of features, functionality~~ \
-~~Website Tree Diagram~~\
+~~Website Tree Diagram~~ 
 
 
 
