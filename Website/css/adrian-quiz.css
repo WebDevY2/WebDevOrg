@@ -1,0 +1,38 @@
+#nav {
+    height: 10vh;
+    width: 98.4vw;
+    background-color: red;
+    display: inline-block;
+    align-self: center;
+    margin: 0.5vw;
+}
+
+#bodyMain {
+    display:flex;
+    width: 98.4vw;
+    height: 76vh;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    background-color: antiquewhite;
+}
+
+footer {
+    width: 98.4vw;
+    height: 9.5vh;
+    margin-top: 0.5vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    background-color: olivedrab;
+}
+
+#vertialQuiz {
+
+}
+
+#vertialQuizPicture {
+
+}
+
+#vertialQuizQuestion {
+
+}
