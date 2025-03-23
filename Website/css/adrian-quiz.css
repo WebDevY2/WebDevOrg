@@ -1,17 +1,16 @@
 #nav {
     height: 10vh;
-    width: 97.9vw;
+    width: 97.4vw;
     background-color: red;
     display: inline-block;
     align-self: center;
     margin: 0.5vw;
-    margin-right: 15vw;
 }
 
 #bodyMain {
     display:flex;
     flex-direction: column;
-    width: 97.9vw;
+    width: 97.4vw;
     height: 76vh;
     margin-left: 0.5vw;
     margin-right: 1vw;
@@ -19,7 +18,7 @@
 }
 
 footer {
-    width: 97.9vw;
+    width: 97.4vw;
     height: 9.5vh;
     margin-top: 0.5vw;
     margin-left: 0.5vw;
@@ -29,11 +28,11 @@ footer {
 
 .questionFrame {
     width: 100%;
-    height: 10%;
+    height: 30%;
     align-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 5%;
+    margin-bottom: 5vh;
 }
 .questionImage {
     float: left;
