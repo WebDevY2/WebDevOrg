@@ -13,6 +13,10 @@ body {
     align-self: center;
     align-content: center;
     align-items: center;
+    width: 98.2vw;
+    height: 76vh;
+    margin-left: 0.8vw;
+    margin-right: 0.8vw;
 }
 #bodyMain {
 
