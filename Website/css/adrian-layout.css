@@ -1,0 +1,40 @@
+#nav {
+    height: 10vh;
+    width: 97vw;
+    background-color: red;
+    display: inline-block;
+    align-self: center;
+    margin: 0.5vw;
+    margin-right: 0.8vw;
+    margin-left: 0.8vw;
+}
+
+body {
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    width: 98.2vw;
+    height: 76vh;
+    margin-left: 0.8vw;
+    margin-right: 0.8vw;
+}
+#bodyMain {
+
+    display:flex;
+    flex-direction: column;
+    width: 97vw;
+    height: 76vh;
+    margin-left: 0.8vw;
+    margin-right: 0.8vw;
+    margin-bottom: 1vh;
+    background-color: antiquewhite;
+}
+
+footer {
+    width: 97vw;
+    height: 8vh;
+    margin-top: 0.5vw;
+    margin-left: 0.8vw;
+    margin-right: 0.8vw;
+    background-color: antiquewhite;
+}

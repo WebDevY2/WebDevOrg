@@ -1,0 +1,92 @@
+
+
+.questionFrame {
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+form {
+    width: 100%;
+    height: 100%;
+}
+.questionWrapper {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    flex-direction: row;
+    margin-top: 2%;
+
+}
+
+
+.questionImage {
+    float: left;
+    width: 30%;
+    height: 100%;
+    background-color: green;
+}
+.questionHeader {
+    float: right;
+    width: 70%;
+    height: 40%;
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+
+.questionHeader p {
+     margin-block: 0;
+}
+
+.questionContents {
+    display: flex;
+    flex-direction:column;
+    float: right;
+    width: 69%;
+    height:100%;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    margin-left: 0.5%;
+
+}
+
+.questionRadioGridWrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-content: center;
+    flex-direction: column;
+    border-top: black;
+    border-width: 1px;
+    border-top-style: solid;
+}
+
+.questionRadioGrid {
+    display: inline-grid;
+    align-self: center;
+    grid-template-columns: 1fr 1fr;
+    float: right;
+    width: 70%;
+    height:100%;
+    background-color: antiquewhite;
+}
+
+.questionButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    margin-top: 1%;
+}
+
+input[type="submit"] {
+    width: 25%;
+    height: 35%;
+}
