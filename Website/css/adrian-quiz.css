@@ -29,6 +29,19 @@ body {
     margin-bottom: 1vh;
     background-color: antiquewhite;
 }
+.buttonFrame {
+    display:flex;
+    width: 96vw;
+    height: 10vh;
+    margin-left: 0.8vw;
+    margin-right: 0.8vw;
+    margin-bottom: 1vh;
+    background-color: grey;
+}
+
+#questionButtonOverite {
+    margin-bottom: 0.5vh;
+}
 
 footer {
     width: 97vw;
@@ -41,12 +54,28 @@ footer {
 
 .questionFrame {
     width: 100%;
-    height: 30%;
+    height: 100%;
     align-content: center;
     align-items: center;
     text-align: center;
     margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+
 }
+
+form {
+    width: 100%;
+    height: 100%;
+}
+.questionWrapper {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    flex-direction: row;
+}
+
+
 .questionImage {
     float: left;
     width: 30%;
@@ -66,8 +95,20 @@ footer {
 }
 
 .questionContents {
+    display: flex;
+    flex-direction:column;
     float: right;
     width: 70%;
-    height:60%;
+    height:100%;
+    background-color: aliceblue;
+}
+
+.questionRadioGrid {
+    display: inline-grid;
+    align-self: center;
+    grid-template-columns: 1fr 1fr;
+    float: right;
+    width: 70%;
+    height:100%;
     background-color: aliceblue;
 }
