@@ -30,19 +30,19 @@
         let imgSrc = ''
         //Maple
         if(score >17) {
-            imgSrc = "../Pictures/tableMaple.jpg"
+            imgSrc = "Pictures/tableMaple.jpg"
         }
         //Oak
         else if(score > 14 && score < 18) {
-            imgSrc = "../Pictures/tableOak.jpg"
+            imgSrc = "Pictures/tableOak.jpg"
         }
         //Pine
         else if(score > 9 && score < 15) {
-            imgSrc = "../Pictures/tablePine.jpg"
+            imgSrc = "Pictures/tablePine.jpg"
         }
         //Birch
         else if(score < 9) {
-            imgSrc = "../Pictures/tableBirch.jpg"
+            imgSrc = "Pictures/tableBirch.jpg"
         }
 
         document.getElementById("imageOutput").src = imgSrc
