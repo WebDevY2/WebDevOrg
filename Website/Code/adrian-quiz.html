@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../css/adrian-layout.css">
     <link rel="stylesheet" href="../css/adrian-quiz.css">
     <meta charset="UTF-8">
     <title>What table are you?</title>
@@ -13,7 +14,7 @@
     <div id="bodyMain">
 
         <div class="questionFrame">
-            <form action="index.html" method="post">
+            <form id="formTableQuiz">
 
                 <div class="questionWrapper">
                     <div class="questionImage"></div>
@@ -88,6 +89,40 @@
 
                 <input type="submit" value="Submit">
             </form>
+
+            <script>
+                document.getElementById('formTableQuiz').addEventListener('submit', function(e) {
+                    // Prevent refresh
+                    e.preventDefault();
+
+                    // List of questions
+                    const questions = ['q1', 'q2','q3','q4','q5'];
+                    // Score holder
+                    let score = 0;
+                    let quizCompleted = true
+
+                    // Loop through each question and get how many points its worth
+                    questions.forEach(q => {
+                        const selected = document.querySelector(`input[name="${q}"]:checked`);
+
+                        // If quiz completed add value else set as false
+                        if (selected) {
+                            score += parseInt(selected.value);
+                        } else {
+                            quizCompleted = false;
+                        }
+                    });
+
+                    // Handle quiz not complete
+                    if(quizCompleted) {
+                        // Redirect with score in URL
+                        window.location.href = `score-page.html?score=${score}`;
+                    } else {
+                        alert("Please fill in quiz!")
+                    }
+
+                });
+            </script>
 
         </div>
 
