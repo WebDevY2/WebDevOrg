@@ -1,9 +1,0 @@
-functionalities and features :
-
-- forward and backward buttons (backward button leading to home page)
-- home page button (takes you to the home page with all the quizzes)
-- suggested quizzes (at the end of the quiz that takes you to the other quizzes)
-- 4 multiple-choice boxes for every question
-- calculating scores
-- CSS sheets
-- images with links that take you to the corresponding quiz.
