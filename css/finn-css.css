@@ -1,32 +1,42 @@
 .question {
-    background-color: red;
+    background-color: #880808;
     width: 50%;
     text-align: center;
     outline: black 5px solid;
     border-radius: 15px;
 }
-body{
+
+body {
     background-image: url(../Pictures/background.jpg);
 }
 
-.button{
+.button {
     font-size: 2em;
     padding: 10px, 20px;
-    color: red;
-    background: black;
+    color: black;
+    background: #880808;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
-.button:hover{
+.button:hover {
     transform: scale(1.2);
 }
 
-img{
+img {
     max-width: 500px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
-h1{
+
+h1 {
     text-align: center;
+}
+
+.click {
+    width: 50%;
 }
