@@ -1,1 +1,35 @@
+.bodyTitle {
+    width: 100%;
+    height: 15%;
+    text-align: center;
+}
 
+.bodyContentGrid{
+    width: 75vw;
+    height: 58vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+    margin-top: 3vh;
+}
+.bodyContentGrid a img {
+    width: 100%;
+    height: 100%;
+}
+
+.bodyContentGrid a {
+    width: 400px;
+    height: 200px;
+    display: flex;
+
+}
+
+.bodyContentGridItemWrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    overflow: hidden;
+    justify-items: center;
+
+}
