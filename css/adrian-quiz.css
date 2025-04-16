@@ -73,6 +73,7 @@ form {
 .questionRadioGrid {
     display: inline-grid;
     align-self: center;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
     float: right;
     width: 70%;
