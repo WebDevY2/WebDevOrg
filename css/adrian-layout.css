@@ -22,12 +22,13 @@ body {
 
     display:flex;
     flex-direction: column;
-    width: 97vw;
-    height: 76vh;
+    width: 99.5%;
+    height: 100%;
     margin-left: 0.8vw;
     margin-right: 0.8vw;
     margin-bottom: 1vh;
     background-color: antiquewhite;
+    overflow: auto;
 }
 
 footer {
