@@ -29,7 +29,8 @@ form {
     float: left;
     width: 30%;
     height: 23vh;
-    background-color: green;
+    background-color: white;
+    border-radius: 15px
 }
 .questionHeader {
     float: right;
@@ -49,14 +50,16 @@ form {
     float: right;
     width: 69%;
     height:23vh;
-    background-color: antiquewhite;
+    background-color: #f7f7f7;
     border: 1px solid black;
+    border-radius: 15px;
     margin-left: 0.5%;
 
 }
 .questionImage img {
     width: 100%;
     height: 100%;
+    border-radius: 15px
 }
 
 .questionRadioGridWrapper {
@@ -78,7 +81,7 @@ form {
     float: right;
     width: 70%;
     height:100%;
-    background-color: antiquewhite;
+    background-color: #f7f7f7;
 }
 
 .questionButton {
