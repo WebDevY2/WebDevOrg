@@ -1,9 +1,17 @@
+
+* { /* a universal reset to ensure consistancy */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .navbar {
   background-color: #800000; 
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
+  width: 100vw; /* or 100% */
+  box-sizing: border-box;
   margin-bottom: 40px; 
   color: white;
   font-family: Comic Sans MS;
