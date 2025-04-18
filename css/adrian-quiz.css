@@ -19,7 +19,6 @@ form {
 .questionWrapper {
     display: flex;
     width: 100%;
-    height: 15%;
     flex-direction: row;
     margin-top: 2%;
 
@@ -29,8 +28,9 @@ form {
 .questionImage {
     float: left;
     width: 30%;
-    height: 100%;
-    background-color: green;
+    height: 23vh;
+    background-color: white;
+    border-radius: 15px
 }
 .questionHeader {
     float: right;
@@ -49,11 +49,17 @@ form {
     flex-direction:column;
     float: right;
     width: 69%;
-    height:100%;
-    background-color: antiquewhite;
+    height:23vh;
+    background-color: #f7f7f7;
     border: 1px solid black;
+    border-radius: 15px;
     margin-left: 0.5%;
 
+}
+.questionImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px
 }
 
 .questionRadioGridWrapper {
@@ -70,11 +76,12 @@ form {
 .questionRadioGrid {
     display: inline-grid;
     align-self: center;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
     float: right;
     width: 70%;
     height:100%;
-    background-color: antiquewhite;
+    background-color: #f7f7f7;
 }
 
 .questionButton {
@@ -87,6 +94,6 @@ form {
 }
 
 input[type="submit"] {
-    width: 25%;
-    height: 35%;
+    width: 40%;
+    height: 50%;
 }
