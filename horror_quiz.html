@@ -107,9 +107,15 @@
         </div>
 
     </div>
+    <audio id="button-clicked" src="sounds/stab.mp3" preload="auto"></audio>
 
     <script type="text/javascript">
         function result() {
+
+            const playSound = document.getElementById("button-clicked");
+            playSound.volume = 0.8;
+            playSound.play();
+
             var scores = { jason: 0, michael: 0, ghostface: 0, leatherface: 0, art: 0 };
             //
             for (let i = 1; i <= 10; i++) {
@@ -155,7 +161,7 @@
 
             setTimeout(function () {
                 window.location.href = redirect;
-            }), 2000;
+            }, 1000);
         }
 
 
