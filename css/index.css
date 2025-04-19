@@ -5,6 +5,10 @@
 
 }
 
+#nav {
+    border-radius: 10px;
+}
+
 .bodyContentGrid {
     width: 75vw;
     height: 58vh;
@@ -42,4 +46,13 @@
 
 #bodyMain {
     background-image: linear-gradient(to bottom right, #ED1D24, #FFC20F);
+    border-radius: 10px;
+}
+
+body {
+    background-image: linear-gradient(to bottom left, #2ebfb8, #00c251);
+}
+
+footer {
+    border-radius: 10px;
 }
