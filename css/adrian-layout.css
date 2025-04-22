@@ -14,7 +14,7 @@ body {
     align-items: center;
     width: 98.2vw;
     height: 76vh;
-    margin-left: 1%;
+    margin-left: 0.5%;
 
 
 }
@@ -22,7 +22,6 @@ body {
 
     display:flex;
     flex-direction: column;
-    width: 99.5%;
     height: 100%;
 
     margin-bottom: 1vh;
