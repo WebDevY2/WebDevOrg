@@ -1,22 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="css/finn-css.css">
+    <link rel="stylesheet" href="css/nav-bar.css">
     <title>Slasher Quiz</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+    </style>
 </head>
+
 <body>
+    <div class="navbar">
+        <div class="logo" onclick="window.location.href='index.html'">QuizLover</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Shatha-Marvel.html">Marvel</a></li>
+            <li><a href="adrian-quiz.html">Table</a></li>
+            <li><a href="horror_quiz.html">Horror</a></li>
+            <li><a href="">Luke's quiz</a></li>
+        </ul>
+    </div>
     <div id="container">
-    <!--Questions are here for the user to answer. Each one has a value that contributes to
+        <!--Questions are here for the user to answer. Each one has a value that contributes to
     the score and the character they'll end up getting-->
         <div class="question">
-        <h1>Q1: Where would you want to live?</h1>
+            <p>Welcome to Finn's horror quiz. There are 5 possible horror icons you could be depending on how you answer
+                the questions. There is Jason Voorhees, Art the clown, Leatherface, Michael Myers and Ghostface. Which
+                one
+                will you be? Answer all 10 questions and find out!
+            </p>
+        </div>
+        <br>
+        <div class="question">
+            <h1>Q1: Where would you want to live?</h1>
             <input type="radio" name="question1" value="jason">The woods<br>
             <input type="radio" name="question1" value="michael">A suburban town<br>
             <input type="radio" name="question1" value="ghostface">Student Accommodation<br>
             <input type="radio" name="question1" value="leatherface">A texas farm<br>
             <input type="radio" name="question1" value="art">An abandoned house<br>
         </div>
-
+        <br>
         <div class="question">
             <h1>Q2: What weapon would you use in a zombie apocalypse?</h1>
             <input type="radio" name="question2" value="jason">A machete<br>
@@ -25,7 +49,7 @@
             <input type="radio" name="question2" value="leatherface">A chainsaw<br>
             <input type="radio" name="question2" value="art">Whatever I can find<br>
         </div>
-
+        <br>
         <div class="question">
             <h1>Q3: Would you consider yourself evil?</h1>
             <input type="radio" name="question3" value="jason">NO! I just want to be left alone<br>
@@ -34,7 +58,7 @@
             <input type="radio" name="question3" value="leatherface">No but I know people who are<br>
             <input type="radio" name="question3" value="art">Evil lives in me<br>
         </div>
-
+        <br>
         <div class="question">
             <h1>Q4: You're going on a roadtrip. Which song are you putting on first?</h1>
             <input type="radio" name="question4" value="jason">Livin' On A Prayer - Bon Jovi<br>
@@ -43,7 +67,7 @@
             <input type="radio" name="question4" value="leatherface">Take me home - John Denver<br>
             <input type="radio" name="question4" value="art">Tears Don't Fall - Bullet For My Valentine<br>
         </div>
-
+        <br>
         <div class="question">
             <h1>Q5: You've won a free weekend in London. What's the first thing you're doing there?</h1>
             <input type="radio" name="question5" value="jason">Highgate Cemetery<br>
@@ -52,6 +76,7 @@
             <input type="radio" name="question5" value="leatherface">I don't want to go to London<br>
             <input type="radio" name="question5" value="art">Nightclubbing in Soho<br>
         </div>
+        <br>
         <div class="question">
             <h1>Q6: What scares you the most?</h1>
             <input type="radio" name="question6" value="jason">Teenagers<br>
@@ -60,16 +85,16 @@
             <input type="radio" name="question6" value="leatherface">My family<br>
             <input type="radio" name="question6" value="art">I fear nothing<br>
         </div>
-
+        <br>
         <div class="question">
-        <h1>Q7: What mask are you choosing?</h1>
+            <h1>Q7: What mask are you choosing?</h1>
             <input type="radio" name="question7" value="jason">Hockey is fun<br>
             <input type="radio" name="question7" value="michael">Whatever mask I can find. Doesn't matter<br>
             <input type="radio" name="question7" value="ghostface">Halloween mask. Something spooky<br>
             <input type="radio" name="question7" value="leatherface">I'll make my own<br>
             <input type="radio" name="question7" value="art">I prefer makeup<br>
         </div>
-        
+        <br>
         <div class="question">
             <h1>Q8: Choose a holiday destination</h1>
             <input type="radio" name="question8" value="jason">Outer Space<br>
@@ -78,89 +103,98 @@
             <input type="radio" name="question8" value="leatherface">Somewhere in the country. No people<br>
             <input type="radio" name="question8" value="art">I'll go anywhere with my friends<br>
         </div>
-
+        <br>
         <div class="question">
-        <h1>Q9: What's your favourite Disney Movie?</h1>
+            <h1>Q9: What's your favourite Disney Movie?</h1>
             <input type="radio" name="question9" value="jason">The Little Mermaid<br>
             <input type="radio" name="question9" value="michael">The Jungle Book<br>
             <input type="radio" name="question9" value="ghostface">Toy Story<br>
             <input type="radio" name="question9" value="leatherface">Snow White<br>
             <input type="radio" name="question9" value="art">Inside Out<br>
         </div>
-
+        <br>
         <div class="question">
             <h1>Q10: Lastly, what are you doing on a rainy day?</h1>
             <input type="radio" name="question10" value="jason">Screw the rain. I'm going outside anyway<br>
-            <input type="radio" name="question10" value="michael">Stare outside imagining the fun I could be having if it wasn't raining<br>
+            <input type="radio" name="question10" value="michael">Stare outside imagining the fun I could be having if
+            it wasn't raining<br>
             <input type="radio" name="question10" value="ghostface">Play some video games with friends<br>
             <input type="radio" name="question10" value="leatherface">Read a book<br>
             <input type="radio" name="question10" value="art">Bake a cake<br>
         </div>
+        <div class="click">
+            <br>
+            <br>
+            <button class="button" onclick="result()">Who are you!</button>
+            <p id="character-finder"></p>
+        </div>
+
     </div>
+    <audio id="button-clicked" src="sounds/stab.mp3" preload="auto"></audio>
 
-<script type="text/javascript">
-    function result()
-    {
-        var scores ={jason: 0, michael: 0, ghostface: 0, leatherface: 0, art: 0};
-        //
-        for (let i=1; i<=10; i++)
-        {
-            let character = document.querySelector(`input[name="question${i}"]:checked`);
-            if (character)
-            {
-                let selection = character.value;
-                scores[selection]++; 
+    <script type="text/javascript">
+        function result() {
+
+            const playSound = document.getElementById("button-clicked");
+            playSound.volume = 0.8;
+            playSound.play();
+
+            var scores = { jason: 0, michael: 0, ghostface: 0, leatherface: 0, art: 0 };
+            //
+            for (let i = 1; i <= 10; i++) {
+                let character = document.querySelector(`input[name="question${i}"]:checked`);
+                if (character) {
+                    let selection = character.value;
+                    scores[selection]++;
+                }
             }
-        }
-        let totalScore = Math.max(...Object.values(scores));
-        let chosenCharacter = Object.keys(scores).find(key => scores[key] === totalScore);
+            let totalScore = Math.max(...Object.values(scores));
+            let chosenCharacter = Object.keys(scores).find(key => scores[key] === totalScore);
 
 
-        let resultText = "";
-        let redirect = "";
-        switch (chosenCharacter)
-        {
-            case "jason":
-                resultText = "You are Jason Voorhees.";
-                redirect = "jason.html";
-                break;             
-            case "michael":
-                resultText = "You are Michael Myers.";   
-                redirect = "michael.html";     
-                break;  
-            case "ghostface": 
-                resultText = "You are ghostface.";        
-                redirect = "ghostface.html";
-                break;
-            case "leatherface": 
-                resultText = "You are leatherface.";      
-                redirect= "leatherface.html"
-                break;
-            case "art":
-                resultText = "You are art the clown.";
-                redirect = "art.html";
-                break;
-            default:
-                resultText = "You haven't answered all the questions!";
+            let resultText = "";
+            let redirect = "";
+            switch (chosenCharacter) {
+                case "jason":
+                    resultText = "You are Jason Voorhees.";
+                    redirect = "jason.html";
+                    break;
+                case "michael":
+                    resultText = "You are Michael Myers.";
+                    redirect = "michael.html";
+                    break;
+                case "ghostface":
+                    resultText = "You are ghostface.";
+                    redirect = "ghostface.html";
+                    break;
+                case "leatherface":
+                    resultText = "You are leatherface.";
+                    redirect = "leatherface.html"
+                    break;
+                case "art":
+                    resultText = "You are art the clown.";
+                    redirect = "art.html";
+                    break;
+                default:
+                    resultText = "You haven't answered all the questions!";
                 //makes sure that the user needs to answer all the questions before they can submit
-        }
-        
-        document.getElementById("character-finder").innerText = resultText;
-        
-        setTimeout(function()
-    {
-        window.location.href = redirect;
-    }),2000;
-    }
-    
-    
+            }
 
-</script>
-   
-    <button class="button" onclick="result()">Who are you!</button>
-    <p id="character-finder"></p>
- 
+            document.getElementById("character-finder").innerText = resultText;
+
+            setTimeout(function () {
+                window.location.href = redirect;
+            }, 1000);
+        }
+
+
+
+    </script>
+
+
+
     <!--Here the user can submit the answers they've chosen and from there the HTML will
     send the data to the javascript to complete find out which character they are-->
 </body>
+
 </html>

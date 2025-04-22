@@ -1,0 +1,58 @@
+/* HTML div for the Nav Bar:
+    <div class="navbar">
+            <div class="logo" onclick="window.location.href='index.html'">QuizLover</div>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Shatha-Marvel.html">Marvel</a></li>
+              <li><a href="adrian-quiz.html">Table</a></li>
+              <li><a href="horror_quiz.html">Horror</a></li>
+              <li><a href="">Luke's quiz</a></li>
+            </ul>
+    </div>
+*/
+* { /* a universal reset to ensure consistancy */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  background-color: #800000; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 40px; 
+  color: white;
+  font-family: Comic Sans MS;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  font-family: Papyrus;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 2px 2px #00000040;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color;
+}
+
+.nav-links li a:hover {
+  color: #ffd700; 
+}
