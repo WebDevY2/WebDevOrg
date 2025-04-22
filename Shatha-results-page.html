@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Marvel Result</title>
+  <link rel="stylesheet" href="css/Shatha-Marvel.css">
+  <link rel="stylesheet" href="css/nav-bar.css">
+  <style>
+    body {
+      background: url('Pictures/shatha-wallpaper.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+  </style>   
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo" onclick="window.location.href='index.html'">QuizLover</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Shatha-Marvel.html">Marvel</a></li>
+      <li><a href="adrian-quiz.html">Table</a></li>
+      <li><a href="horror_quiz.html">Horror</a></li>
+      <li><a href="">Luke</a></li>
+    </ul>
+</div>
+
+  <script src="Shatha-Marvel.js" defer></script>
+  <div class="quiz-container">
+    <h1>Your Marvel Match Is...</h1>
+    <h2 id="character-result"></h2>
+    <img id="result-image" src="" alt="Character Gif" class="question-gif">
+    <p id="character-description" class="result-des"></p>
+    <button id="restart" class="button">Take quiz again</button>
+    <button id="home" class="button">Return to quizzes</button>
+    <h3 style="font-size: 24px; text-align: left; color: #a11616; "> Recommended quizzes: </h3>
+    <div class="recommended-quiz-container">
+      <a href="adrian-quiz.html">
+        <img src="Pictures/tableBirch.jpg" alt="table Quiz Wallpaper" class="recommended-quiz">
+        <div style="color: #a11616;">What table are you?</div>
+      </a>
+      <a href="horror_quiz.html.html">
+        <img src="Pictures/background.jpg" alt="finn Quiz Wallpaper" class="recommended-quiz">
+        <div style="color: #a11616;">What horrror characeter are you?</div>
+      </a>
+          </div>
+  </div>
+
+  <script>
+    const character = localStorage.getItem('marvelResult');
+    const resultElement = document.getElementById('character-result');
+    const description = document.getElementById('character-description');
+    const image = document.getElementById('result-image');
+
+    const data = {
+      "Spider-Man": {
+        gifUrl: "Pictures/shatha-q8.gif",
+        desc: "You got Spider-Man (Tom Holland) – energetic, idealistic, and full of heart. Like Peter Parker, you're the kind of person who wants to do the right thing, even if you're still figuring things out along the way. You're passionate, people-loving, and guided by your values – always jumping into action and learning as you go. You thrive on connection, care deeply what others think, and sometimes put a little too much pressure on yourself to prove your worth. But at the end of the day, your optimism, quick wit, and relentless spirit make you a true hero at heart."
+      },
+      "Deadpool": {
+        gifUrl: "Pictures/shatha-q3.gif",
+        desc: "You got Deadpool – unpredictable, hilarious, and totally unforgettable. Like Wade Wilson, you don’t take life too seriously and always manage to find humor, even in the darkest moments. You're a wild card with a sharp tongue, fearless energy, and a rebellious streak a mile wide. Beneath all the sarcasm, though, is someone deeply loyal, surprisingly caring, and unshakably determined. You break the mold, rewrite the rules, and do it all with style (and probably a few inappropriate jokes)."
+      },
+      "Black Widow": {
+        gifUrl: "Pictures/shatha-q5.gif",
+        desc: "You got Black Widow – sharp, composed, and deeply resilient. Like Natasha Romanoff, you’re a master of keeping calm under pressure and thinking ten steps ahead. You're observant, strategic, and often the quiet strength in any group. While you might keep your emotions guarded, you're fiercely loyal to those you trust and aren’t afraid to face your past to build a better future. You’re the type who moves in silence but makes a lasting impact."
+      },
+      "Hulk": {
+        gifUrl: "Pictures/shatha-q4.gif",
+        desc: "You got The Hulk – powerful, emotional, and unpredictable. Like the Hulk, you feel everything intensely and don't always show it until you're pushed to your limit. While others may see you as impulsive or explosive, your emotions often come from a deep place of passion and protection. You are guided by instinct, and when something matters to you, you’ll fight with everything you have. Despite your wild side, there is also a quiet strength and loyalty beneath the surface – you are more than just your rage."
+      },
+      "Wolverine": {
+        gifUrl: "Pictures/shatha-q6.gif",
+        desc: "You got Wolverine – fierce, loyal, and tough to the core. Like Logan, you’ve been through a lot, but every scar has made you stronger. You don’t open up easily, but when you care about someone, you’ll fight like hell to protect them. You’ve got a rough exterior and a no-nonsense attitude, but deep down, you have a strong sense of justice and heart. You're independent, resilient, and always true to yourself — even if it means standing alone."
+      },
+      "Iron Man": {
+        gifUrl: "Pictures/shatha-q2.gif",
+        desc: "You got Tony Stark (Iron Man) – a bold, brilliant visionary with a sharp mind and unstoppable drive. Like Tony, you’re a natural leader who thrives under pressure, thinks ten steps ahead, and isn’t afraid to shake things up to make things better. You’re confident, witty, and passionate about your ideas, but your intense nature can sometimes make you seem distant or impulsive. Still, beneath that cool exterior is someone who feels deeply and wants to leave a real impact on the world. You’re not just smart — you’re a force."
+      }
+    };
+
+    if (character && data[character]) {
+      resultElement.textContent = character;
+      description.textContent = data[character].desc;
+      image.src = data[character].gifUrl;
+    } else {
+      resultElement.textContent = "Oops! Something went wrong.";
+      description.textContent = "";
+    } 
+    
+    document.getElementById("restart").onclick = function () {
+      window.location.href = "Shatha-Marvel.html";
+    };
+    document.getElementById("home").onclick = function () {
+      window.location.href = "index.html";
+    };
+  </script>
+
+</body>
+</html>
