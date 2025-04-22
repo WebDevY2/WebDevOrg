@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Combined Quiz Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+      border: 1px solid #000;
+      padding: 10px;
+    }
+
+    .quiz-title {
+      text-align: center;
+      font-size: 24px;
+      margin: 20px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .question-box {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .result, .result-description {
+      border: 1px solid #ccc;
+      padding: 20px;
+      text-align: center;
+      margin: 15px 0;
+    }
+
+    .quiz-buttons {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .quiz-buttons button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+    button.submit-btn {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Logo</div>
+  </header>
+
+  <div class="quiz-title">World Knowledge Quiz</div>
+
+  <!-- Question 1 -->
+  <div class="question-box">
+    <p><strong>Question 1:</strong> What is the capital of France?</p>
+    <form id="q1Form">
+      <label><input type="radio" name="q1" value="A"> A. Berlin</label><br>
+      <label><input type="radio" name="q1" value="B"> B. Madrid</label><br>
+      <label><input type="radio" name="q1" value="C"> C. Paris</label><br>
+      <label><input type="radio" name="q1" value="D"> D. Rome</label><br>
+      <button type="button" class="submit-btn" onclick="checkAnswer('q1', 'C')">Submit</button>
+    </form>
+    <p id="result-q1"></p>
+  </div>
+
+  <!-- Question 2 -->
+  <div class="question-box">
+    <p><strong>Question 2:</strong> What is the capital of Germany?</p>
+    <form id="q2Form">
+      <label><input type="radio" name="q2" value="A"> A. Paris</label><br>
+      <label><input type="radio" name="q2" value="B"> B. Berlin</label><br>
+      <label><input type="radio" name="q2" value="C"> C. Madrid</label><br>
+      <label><input type="radio" name="q2" value="D"> D. Rome</label><br>
+      <button type="button" class="submit-btn" onclick="checkAnswer('q2', 'B')">Submit</button>
+    </form>
+    <p id="result-q2"></p>
+  </div>
+
+  <!-- Question 3 -->
+  <div class="question-box">
+    <p><strong>Question 3:</strong> Which planet is known as the Red Planet?</p>
+    <form id="q3Form">
+      <label><input type="radio" name="q3" value="A"> A. Earth</label><br>
+      <label><input type="radio" name="q3" value="B"> B. Venus</label><br>
+      <label><input type="radio" name="q3" value="C"> C. Mars</label><br>
+      <label><input type="radio" name="q3" value="D"> D. Jupiter</label><br>
+      <button type="button" class="submit-btn" onclick="checkAnswer('q3', 'C')">Submit</button>
+    </form>
+    <p id="result-q3"></p>
+  </div>
+
+  <!-- Results -->
+  <div class="result" id="result">Result</div>
+  <div class="result-description" id="resultDesc">Description of result</div>
+
+  <!-- Buttons -->
+  <div class="quiz-buttons">
+    <button onclick="retakeQuiz()">Retake Quiz</button>
+    <button>Adrian's Quiz</button>
+    <button>Finn's Quiz</button>
+    <button>Shatha's Quiz</button>
+  </div>
+
+  <script>
+    function checkAnswer(questionId, correctAnswer) {
+      const options = document.getElementsByName(questionId);
+      let selected = null;
+      for (const option of options) {
+        if (option.checked) {
+          selected = option.value;
+          break;
+        }
+      }
+
+      const resultElement = document.getElementById(`result-${questionId}`);
+      if (selected === correctAnswer) {
+        resultElement.textContent = "Correct! 🎉";
+        resultElement.style.color = "green";
+      } else if (selected) {
+        resultElement.textContent = "Incorrect. Try again!";
+        resultElement.style.color = "red";
+      } else {
+        resultElement.textContent = "Please select an answer.";
+        resultElement.style.color = "orange";
+      }
+    }
+
+    function retakeQuiz() {
+      document.querySelectorAll('input[type="radio"]').forEach(input => input.checked = false);
+      document.querySelectorAll('p[id^="result-q"]').forEach(p => p.textContent = '');
+      document.getElementById('result').textContent = 'Result';
+      document.getElementById('resultDesc').textContent = 'Description of result';
+    }
+  </script>
+
+</body>
+</html>
