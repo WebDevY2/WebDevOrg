@@ -60,3 +60,17 @@ button.submit-btn {
   margin-top: 10px;
 }
 
+.hidden-radio {
+  display: none;
+}
+
+.option-image {
+  border: 2px solid transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: border 0.2s;
+}
+
+.hidden-radio:checked + .option-image {
+  border: 2px solid blue;
+}
