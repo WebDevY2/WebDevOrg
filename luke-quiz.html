@@ -6,6 +6,9 @@
     <meta charset="UTF-8" />
     <title>Combined Quiz Page</title>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+      </style>
 </head>
 <body style="background-color:whitesmoke;">
   <div class="navbar">
@@ -24,11 +27,12 @@
 <audio id="FinishSound" src="Sounds/luke-starwars-theme.mp3" preload="auto"></audio>
 
 
-<div class="quiz-title" style="background-color:aquamarine;">Which Lightsaber Color Are You?</div>
+<div class="quiz-title" ><img src="Pictures/luke-StarWarsFont.png" alt="Which Lightsaber Color Are You?" ></div>
 
   <!-- Question 1 -->
   <div class="question-box" style="background-color: azure;">
-    <p><strong>1. You’re waiting in a long queue for lunch at school and someone cuts in front of you. What do you do? </strong></p>
+    <p class="starwars-font"><strong>1. You’re waiting in a long queue for lunch at school and someone cuts in front of you. What do you do? </strong></p><br>
+    <div class="normal-font">
     <label><input type="radio" name="q1" value="blue" onclick="playClickSound()">A. Let a teacher know that they’ve just pushed in. </label><br><br>
     <label><input type="radio" name="q1" value="green" onclick="playClickSound()">B. You approach them calmly and ask them to go to where they should be in the queue. </label><br><br>
     <label><input type="radio" name="q1" value="red" onclick="playClickSound()">C. This fills you with rage, you go up to them and push them out of the line making sure they must go all the way to the back </label><br><br>
@@ -37,7 +41,7 @@
     <label><input type="radio" name="q1" value="orange" onclick="playClickSound()">F. It doesn't matter to you as you know a shortcut to get to the front anyways </label><br><br>
     <label><input type="radio" name="q1" value="white" onclick="playClickSound()">G. It doesn't have affect you enough to care. You just let it go. </label><br><br>
     <label><input type="radio" name="q1" value="black" onclick="playClickSound()">H. You make sure to push in front of them, no one beats you. </label><br><br>
-
+    </div>  
   </div>
 
   <!-- Lightsabre colour information: 
@@ -57,8 +61,9 @@
   
   Black - power, darkness, aggression, mystery - The Darksabre is a unique weapon and the only known lightsabre to have this colour.  -->
 
-<div class="question-box" style="background-color: azure;">
-  <p><strong> Choose the scenic photo where you would take the best poo. </strong></p>
+<div class="question-box">
+  <p class="starwars-font"><strong> Choose the scenic photo where you would take the best poo. </strong></p>
+  <div class="normal-font">
   <label>
     <input type="radio" name="q2" value="blue" class="hidden-radio" onclick="playClickSound()">
     <img src="Pictures/luke-lake.jpeg" alt="Option Blue" class="option-image" width="250" height="250">
@@ -85,11 +90,13 @@
     <input type="radio" name="q2" value="black" class="hidden-radio" onclick="playClickSound()">
     <img src="Pictures/luke-isolated-house.jpeg" alt="Black" class="option-image" width="250" height="250">
   </label>
+  </div>
 </div>
 
 
-  <div class="question-box" style="background-color: azure;">
-    <p><strong>3. You go to the library and there are no seats what do you do?</strong></p>
+  <div class="question-box">
+    <p class="starwars-font"><strong>3. You go to the library and there are no seats what do you do?</strong></p><br>
+    <div class="normal-font">
 <label><input type="radio" name="q3" value="blue" onclick="playClickSound()">A. You accept that there are no seats and try somewhere else. </label><br><br>
 <label><input type="radio" name="q3" value="green" onclick="playClickSound()">B. You wait around until one opens up.</label><br><br>
 <label><input type="radio" name="q3" value="red" onclick="playClickSound()">C. You see that someone has left their stuff at a seat but they are nowhere to be found. You take the seat as it is rightfully yours.</label><br><br>
@@ -98,32 +105,73 @@
 <label><input type="radio" name="q3" value="orange" onclick="playClickSound()">F. You bring a seat in from another room onto an empty table.</label><br><br>
 <label><input type="radio" name="q3" value="white" onclick="playClickSound()">G. You ask the librarian when is the best time to come back for getting a seat.</label><br><br>
 <label><input type="radio" name="q3" value="black" onclick="playClickSound()">H. You see the same persons empty seat but you instead move the chair elsewhere for you to use.</label>
+    </div>
+</div>
 
-  </div>
-
-  <div class="question-box" style="background-color:azure;">
-    <p><strong>4. Choose a word you think you friends are most likely to  describe you as</strong></p>
-    <label><input type="radio" name="q4" value="red"> Intelligent</label><br><br>
-    <label><input type="radio" name="q4" value="blue"> Loyal</label><br><br>
-    <label><input type="radio" name="q4" value="green"> Spiritual</label><br><br>
-    <label><input type="radio" name="q4" value="purple"> Wise</label><br><br>
-    <label><input type="radio" name="q4" value="yellow"> Gentle</label><br><br>
-    <label><input type="radio" name="q4" value="orange"> Ambitious</label><br><br>
-    <label><input type="radio" name="q4" value="white"> Positive</label><br><br>
-    <label><input type="radio" name="q4" value="black"> Mysterious</label><br>
+  <div class="question-box">
+    <p class="starwars-font"><strong>4. Choose a word you think you friends are most likely to  describe you as</strong></p>
+    <div class="normal-font">
+    <label><input type="radio" name="q4" value="red" onclick="playClickSound()"> Intelligent</label><br><br>
+    <label><input type="radio" name="q4" value="blue" onclick="playClickSound()"> Loyal</label><br><br>
+    <label><input type="radio" name="q4" value="green" onclick="playClickSound()"> Spiritual</label><br><br>
+    <label><input type="radio" name="q4" value="purple" onclick="playClickSound()"> Wise</label><br><br>
+    <label><input type="radio" name="q4" value="yellow" onclick="playClickSound()"> Gentle</label><br><br>
+    <label><input type="radio" name="q4" value="orange" onclick="playClickSound()"> Ambitious</label><br><br>
+    <label><input type="radio" name="q4" value="white" onclick="playClickSound()"> Positive</label><br><br>
+    <label><input type="radio" name="q4" value="black" onclick="playClickSound()"> Mysterious</label><br>
+    </div>
   </div>
 
 
   <div class="question-box">
-    <p><strong>5. What is your greatest strength?</strong></p>
-    <label><input type="radio" name="q5" value="red"> Determination</label><br>
-    <label><input type="radio" name="q5" value="blue"> Loyalty</label><br>
-    <label><input type="radio" name="q5" value="green"> Intelligence</label><br>
-    <label><input type="radio" name="q5" value="purple"> Creativity</label>
+    <p class="starwars-font"><strong>5. Favourite StarWars Movie?</strong></p>
+    <div class="normal-font">
+  <label>
+    <input type="radio" name="q5" value="yellow" class="hidden-radio" onclick="playClickSound()">
+    <img src="Pictures/luke-ep1.jpeg" alt="The Phantom Menace" class="option-image" width="200" height="200">
+  </label>
+  <label>
+    <input type="radio" name="q5" value="purple" class="hidden-radio" onclick="playClickSound()">
+    <img src="Pictures//luke-ep2.jpeg" alt="Star Wars the Clone Wars" class="option-image" width="200" height="200">
+  </label>
+  <label>
+      <input type="radio" name="q5" value="red" class="hidden-radio" onclick="playClickSound()">
+      <img src="Pictures/luke-ep3.jpeg" alt="Revenge of the Sith" class="option-image" width="200" height="200">
+    </label>
+    <label>
+      <input type="radio" name="q5" value="blue" class="hidden-radio" onclick="playClickSound()">
+      <img src="Pictures/luke-ep4.jpeg" alt="A New Hope" class="option-image" width="200" height="200">
+    </label>
+    <label>
+      <input type="radio" name="q5" value="red" class="hidden-radio" onclick="playClickSound()">
+      <img src="Pictures/luke-ep5.jpeg" alt="The Empire Strikes Back" class="option-image" width="200" height="200">
+    </label>
+    <label>
+      <input type="radio" name="q5" value="green" class="hidden-radio" onclick="playClickSound()">
+      <img src="Pictures/luke-ep6.jpeg" alt="Return of the Jedi" class="option-image" width="200" height="200">
+    </label>
+    <label>
+      <input type="radio" name="q5" value="orange" class="hidden-radio" onclick="playClickSound()">
+      <img src="Pictures/luke-ep7.jpeg" alt="Episode 7" class="option-image" width="200" height="200">
+    </label>
+    <label>
+      <input type="radio" name="q5" value="black" class="hidden-radio" onclick="playClickSound()">
+      <img src="Pictures/luke-ep8.jpeg" alt="The Last Jedi" class="option-image" width="200" height="200">
+    </label>
+    <label>
+      <input type="radio" name="q5" value="white" class="hidden-radio" onclick="playClickSound()">
+      <img src="Pictures/luke-ep9.jpeg" alt="The rise of the skywalker" class="option-image" width="200" height="200">
+    </label>
+    <label>
+      <input type="radio" name="q5" value="" class="hidden-radio" onclick="playClickSound()">
+      <img src="Pictures/luke-lightsabers.png" alt="lightsabers" class="option-image" width="200" height="200">
+    </label><br>
+      <label><input type="radio" name="q5" value="" onclick="playClickSound()">I haven't watched any Star Wars but I am going to go home and watch all 9 films back to back right now because of this quiz. Click above on the lightsabers (or this text) </label>
+  </div>
   </div>
 
   <div class="quiz-buttons">
-    <button onclick="submitQuiz()">Submit Quiz</button>
+    <button onclick="submitQuiz()" >Submit Quiz</button>
     <button onclick="retakeQuiz()">Retake Quiz</button>
   </div>
 
@@ -167,26 +215,51 @@
         blue: [
           "Pictures/luke-anakinBlue.png",
           "Pictures/luke-reyBlue.png",
-          "Pictures/luke-lukeBlue.png"
+          "Pictures/luke-lukeBlue.png",
+          "Pictures/luke-ReyBlue.jpeg"
         ],
         green: [
           "Pictures/luke-lukeGreen.jpeg",
           "Pictures/luke-quigonGreen.jpeg",
-          "Pictures/luke-yodaGreen.jpeg"
+          "Pictures/luke-yodaGreen.jpeg",
+          "Pictures/luke-oldLukeGreen.jpeg"
+
         ],
         red: [
           "Pictures/luke-vaderRed.jpeg",
-          "Pictures/luke-kyloRed.jpeg",        
+          "Pictures/luke-kyloRed.jpeg",
+          "Pictures/luke-maulRed.jpeg",
+          "Pictures/luke-palpatineRed.jpeg"
           ],
         purple: [
+          "Pictures/luke-maceWindu-purple.jpeg",
+          "Pictures/luke-purplelightsaber-purple.jpeg",
+          "Pictures/luke-revan-purple.avif",
+          "Pictures/luke-purpleCalKestis.jpeg"
         ],
         yellow: [
+          "Pictures/luke-ReyYellow.jpeg",
+          "Pictures/luke-yellowTempleGuard.jpeg",
+          "Pictures/luke-acolyteYellow.jpeg",
+          "Pictures/luke-yellowLuke.jpeg"
         ],
         orange: [
+          "Pictures/luke-ballanscrallOrange.jpeg",
+          "Pictures/luke-BaylanOrange.jpeg",
+          "Pictures/luke-calkestisOrange.jpeg",
+          "Pictures/luke-shinOrange.avif"
         ],
         white: [
+          "Pictures/luke-ahsokaWhite1.jpeg",
+          "Pictures/luke-ahsokaWhite2.jpeg",
+          "Pictures/luke-ahsokaWhite3.jpeg",
+          "Pictures/luke-ahsokaWhite4.jpeg"
         ],
         black: [
+          "Pictures/luke-darksaberBoKatan.jpeg",
+          "Pictures/luke-darksaberMando.jpeg",
+          "Pictures/luke-darksaberQueenMando.jpeg",
+          "Pictures/luke-maulDarksaber.jpeg"
         ]
       };
       
@@ -194,9 +267,9 @@
         blue: "You are loyaly, stable, and believe in truth and justice above all else. Notable Jedis that had a blue lightsaber were Obiwan Kenobi, Anakin Skywalker and Rey!",
         green: "You prioritise growth, safety, harmony. As a jedi you are extremely in tune with the force. The most famous green lightsaber user is Master Yoda!",
         red: "Your ambition fuels you. You have a strong thirst for knowledge and power. In the star wars universe you would be a sith! They are force users like the jedi but they do not follow the same beliefs and rules that a jedi would! ",
-        purple: "You are noble wise and fierce warrior. You are also Samuel Jackson who when cast to play Mace Windu asked specifically for a purple lightsaber! No other Jedi has a purple lightsaber.",
+        purple: "You are noble wise and fierce warrior. You are also Samuel L. Jackson who when cast to play Mace Windu asked specifically for a purple lightsaber! No other Jedi has a purple lightsaber.",
         yellow: "You bring a certain warmth and goodness to a room when you enter. The Jedi who have yellow lightsabers are typically the Temple Guards on Coruscant.",
-        orange: "You are neither good nor evil. Perhaps a step to the side of this spectrum. Notable Jedis with orange lightsabers are ballan scrall and his apprentice appearing in the Ahsoka series.",
+        orange: "You are neither good nor evil. Perhaps a step to the side of this spectrum or a foot in both. Notable Jedis with orange lightsabers are Baylan Skoll and his apprentice, Shin Hati, appearing in the Ahsoka series.",
         white: "You have purged your past and become a pure person at peace with who they are. Jedis with a white lightsaber have taken a red one and purged the kyber crystal inside. Notable white wielding jedis include Ahsoka!",
         black: "The darksaber! You are a person of power aggression and mystery. Forged for a Mandalorian Jedi. The Mandalorians follow a religion of fighting and often engage in infighting between themselves but it is held in legend that the Mandalorian who wields the darksaber will reunite them and retake the planet of Mandalore."
       };
@@ -218,7 +291,8 @@ if (images && images.length > 0) {
     const img = document.createElement('img');
     img.src = src;
     img.alt = `${topColor} lightsaber`;
-    img.style.maxWidth = "1000px";
+    img.style.width = "275px";
+    img.style.height = "225px";
     img.style.borderRadius = "5px";
     img.style.boxShadow = "0 4px 8px rgba(0,0,0,0.2)";
 
@@ -273,15 +347,6 @@ function retakeQuiz() {
       }
        
   </script>
-
-
-  <!-- Buttons -->
-  <div class="quiz-buttons">
-    <button onclick="retakeQuiz()">Retake Quiz</button>
-    <button><a href = "adrian-quiz.html">Adrian's Quiz</a></button>
-    <button><a href = "horror_quiz.html">Finn's Quiz</a></button>
-    <button><a href = "Marvel.html">Shatha's Quiz</a></button>
-  </div>
 
 </body>
 </html>
