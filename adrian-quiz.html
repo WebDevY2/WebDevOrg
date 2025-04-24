@@ -23,7 +23,7 @@
     <div id="bodyMain">
 
         <div class="questionFrame">
-            <form id="formTableQuiz">
+            <form id="formTableQuiz" onsubmit="playSound()">
 
                 <div class="questionWrapper">
                     <div class="questionImage">
@@ -125,7 +125,24 @@
                 </div>
 
             </form>
+            <!-- SOUND ------------------------------>
+            <audio id="submit-sound">
+                <source src="sounds/woodButton.ogg" type="audio/ogg">
+            </audio>
 
+            <script>
+                function playSound() {
+                    const audio = document.getElementById('submit-sound');
+                    audio.play();
+                    audio.volume = 1;
+
+                    setTimeout(() => {
+                        document.getElementById('formTableQuiz').submit();
+                    }, 300);
+                }
+            </script>
+
+            <!-- Score Script ----------------------->
             <script>
                 document.getElementById('formTableQuiz').addEventListener('submit', function(e) {
                     // Prevent refresh
