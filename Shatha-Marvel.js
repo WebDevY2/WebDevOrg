@@ -2,6 +2,11 @@ const quizContainer = document.getElementById('quiz');
 const submitButton = document.getElementById('submit');
 const buttonClick = new Audio();
 const submitClick = new Audio();
+var icon = document.getElementById("moon-icon");
+
+icon.onclick = function() {
+    document.body.classList.toggle("dark-theme");
+}
 
 buttonClick.src = "sounds/button-pressed.mp3"
 submitClick.src = "sounds/tadaa.mp3"
