@@ -6,7 +6,7 @@ var icon = document.getElementById("moon-icon");
 
 icon.onclick = function() {
     document.body.classList.toggle("dark-theme");
-}
+} 
 
 buttonClick.src = "sounds/button-pressed.mp3"
 submitClick.src = "sounds/tadaa.mp3"
