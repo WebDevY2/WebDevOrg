@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins&display=swap');
 
+:root {
+    --primary-colour: rgba(255, 255, 255, 0.6);
+    --secondary-colour: #fff2d5;
+    --third-colour: #e8f5e9;
+    --fourth-colour: #d31027;
+    --fifth-colour: white;
+}
+.dark-theme {
+    --primary-colour: #444444;
+    --secondary-colour: #585754;
+    --third-colour: #565956;
+    --fourth-colour: #545151;
+    --fifth-colour: #545151;
+}
+#moon-icon {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    width: 40px;
+    cursor: pointer;
+    z-index: 1000;
+    background-color: #e8f5e9;
+    border-radius: 7%;
+}
 body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
